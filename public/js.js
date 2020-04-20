@@ -32,7 +32,8 @@ function submitForm(event) {
         data: {email: email.value, password: password.value}
     })
         .done(function (data) {
-            console.log("Data Saved: ", data);
+            console.log("Data: ", data);
+            alert("See result in the console");
             if (data.status === 1) {
                 email.classList.add("invalid");
                 errorEmail.innerHTML = "Please enter, dia130396@gmail.com"
@@ -43,13 +44,6 @@ function submitForm(event) {
             }
 
         })
-   /*     .done(function (data) {
-            if (data.status === 2) {
-                password.classList.add("invalid");
-                errorPassword.innerHTML = "Please enter,  Password.123"
-            }
-
-        })*/
         .fail(function (data) {
             console.log("Error load");
         })

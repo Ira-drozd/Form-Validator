@@ -15,7 +15,7 @@ body {
 /*form style*/
 form[name=myform] {
   max-width: 500px;
-  background: beige;
+  background: #f0f0f0;
   display: flex;
   flex-direction: column;
   margin: 0 auto;

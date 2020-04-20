@@ -14,7 +14,7 @@ app.get("/register", urlencodedParser, function (request, response) {
 app.post("/register", urlencodedParser, function (request, response) {
     if (!request.body) return response.sendStatus(400);
     console.log(request.body);
-   // response.send(`${request.body.email} - ${request.body.password}`);
+    //response.send(`${request.body.email} - ${request.body.password}`);
 
     function check() {
     let email=request.body.email;
